@@ -43,8 +43,28 @@
 <p>To do this, you can use the command "git add filename" (see Snap below).</p>
 <img src="snaps/8.gitAdd.PNG"  class="center" >
 
-<h3>Step 4:Create a commit</h3>
+<h3>Step 5:Create a commit</h3>
 <p>Once you've used the git add command to add all the files you want to the staging environment, you can then tell git to package them into a commit using the command "git commit -m (your message about the commit)" .</p>
+<img src="snaps/9.gitCommit.PNG"  class="center" >
 <p>The message at the end of the commit should be something related to what the commit contains - maybe it's a new feature, maybe it's a bug fix, maybe it's just fixing a typo.If you leave a clear explanation of your changes it can be extremely helpful for future programmers (perhaps future you!) who are trying to figure out why some change was made years later.</p>
+
+<h3>Step 6:Create a new repository on GitHub</h3>
+<p>To create a new repository on GitHub, Log In and go to the GitHub home page. You can find the “New repository” option under the “+” sign next to your profile picture, in the top right corner of the navbar:</p>
+<img src="snaps/10.newRepo.PNG"  class="center" >
+<p>After clicking the button, GitHub will ask you to name your repo and provide a brief description:</p>
+<img src="snaps/11.gitMyRepo.PNG"  class="center" >
+<p>When you're done filling out the information, press the 'Create repository' button to make your new repo.</p>
+
+<h3>Step 7:Add remote and Push to GitHub</h3>
+<p>Now we'll push the commit in your branch to your new GitHub repo. This allows other people to see the changes you've made,If they're approved by the repository's owner.</p>
+<p>To push changes on GitHub,At first you'll have to configure the remote repository by running command "git remote add origin URL".</p>
+<img src="snaps/12.addRemoteToOrigin.PNG"  class="center" >
+<p>Over here the URL is the URL of your repository made on gitHub.</p>
+<img src="snaps/13.repoURL.PNG"  class="center" >
+<p>Now! Its time to push your file to GitHub remote repository.For this,we will make the remote as upstream branch using command "git push --set-upstream origin master"</p>
+<img src="snaps/14.gitPush.PNG"  class="center" >
+<p>If you refresh the GitHub page, you'll see your files on gitHub repository.</p>
+<img src="snaps/15.gitHubRepo.PNG"  class="center" >
+
 </body>
 </html>
