@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+      </head>
+<body>
+<h2>Welcome Git </h2> 
+<h1>An Intro to Git and GitHub for Beginners (Tutorial)</h1>
+<img src="snaps/0.gitIntro.PNG"  class="left" >
+<p>New to git? Follow the steps below to get comfortable making changes to the code base, opening up a pull request (PR), and merging code into the primary branch. Any important git and GitHub terms are in bold with links to the official git reference materials.</p>
+
+<h3>Step 0: Install git</h3>
+<p>The first thing you'll want to do is to download and install git. <a href="https://git-scm.com/downloads">Clik here</a> to download git for Windows,Linux or macOS.</p>
+<img src="snaps/1.downloadGit.PNG"  class="center" >
+
+<h3>Step 1: Create a GitHub account</h3>
+<p>Next task todo is making an account on GitHub. <a href="https://github.com/join">Clik here</a> to make a GitHub account.</p>
+<img src="snaps/2.gitAccountCreate.PNG"  class="center" >
+<h3 class="h3_left">Git and GitHub</h3>
+<p class="p_left">A quick aside: git and GitHub are not the same thing. Git is an open-source, version control tool  working on the Linux operating system; GitHub is a company  that makes tools which integrate with git. You do not need GitHub to use git, but you cannot use GitHub without using git. There are many other alternatives to GitHub, such as GitLab, BitBucket.</p>
+
+<h3>Step 2: Create a local git repository</h3>
+<p>When creating a new project on your local machine using git, you'll first create a new repository.</p>
+<p>To use git we'll be using the terminal.To begin, open up a terminal - where you want to place the project on your local machine.</p>
+<img src="snaps/3.gitInit.PNG"  class="center" >
+<p>The "git init" command will also make a hidden directory named ".git" in your local directory.</p>
+<img src="snaps/4.gitHidden.PNG"  class="center" >
+ 
+<h3>Step 3: Place or create your project files in local git repository</h3>
+<img src="snaps/5.localRepoFiles.PNG"  class="center" >
+<p>Once you've added or modified files in a folder containing a .git repo, git will notice that  the file exists inside the repo. But, git won't track the file unless you explicitly tell it to.</p>
+<p>After creating the new file, you can use the "git status" command to see which files git knows exist.</p>
+<img src="snaps/6.gitStatus.PNG"  class="center" >
+<p>What this basically says is, "Hey, we noticed you created some new files called Index.html,style.css and a folder snaps.But unless you use the "git add" command we aren't going to do anything with it."</p>
+
+<h3>Step 4:Add a file to the staging environment</h3>
+<h3 class="h3_left">Staging Area and commit</h3>
+<p class="p_left">One of the most confusing parts when you're first learning git is the concept of the staging environment and how it relates to a commit.</p>
+<p class="p_left">COMMIT: You make changes to your repo (for example, adding a file or modifying one) and then tell git to put those changes into a commit.Commits make up the essence of your project and allow you to jump to the state of a project at any other commit.</p>
+<p class="p_left">STAGING INDEX:How do you tell git which files to put into a commit?</p>
+<p class="p_left">This is where the staging environment or index come in.To add a file to a commit, you first need to add it to the staging environment (shown in the snap below).</p> 
+<img src="snaps/7.staging.PNG"  class="center" >
+<p>To do this, you can use the command "git add filename" (see Snap below).</p>
+<img src="snaps/8.gitAdd.PNG"  class="center" >
+
+<h3>Step 4:Create a commit</h3>
+<p>Once you've used the git add command to add all the files you want to the staging environment, you can then tell git to package them into a commit using the command "git commit -m (your message about the commit)" .</p>
+<p>The message at the end of the commit should be something related to what the commit contains - maybe it's a new feature, maybe it's a bug fix, maybe it's just fixing a typo.If you leave a clear explanation of your changes it can be extremely helpful for future programmers (perhaps future you!) who are trying to figure out why some change was made years later.</p>
+</body>
+</html>
